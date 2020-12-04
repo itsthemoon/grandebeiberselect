@@ -187,6 +187,7 @@ function App() {
       document.getElementById("nxtBtn").style.opacity = 0;
       document.getElementById("rstBtn").style.opacity = 1;
       document.getElementById("finalTitle").style.visibility = "visible";
+      document.getElementById("finalpic").style.visibility = "visible";
       //run a function that gives us the final answer
       songChoice();
     }
@@ -250,6 +251,7 @@ function App() {
     document.getElementById("nxtBtn").style.opacity = 1;
     document.getElementById("rstBtn").style.opacity = 0;
     document.getElementById("finalTitle").style.visibility = "collapse";
+    document.getElementById("finalpic").style.visibility = "collapse";
     finalSongs = [];
     console.log(finalSongs);
     console.log(finalSong);

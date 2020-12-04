@@ -30,6 +30,9 @@ body {
   text-align: center;
 }
 
+#finalpic {
+  visibility: collapse;
+}
 .title1 {
   background-color: black;
   color: white;
