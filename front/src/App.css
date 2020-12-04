@@ -1,7 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
 .App {
-  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
+body {
+  background-color: black;
+}
 
+.header {
+  width: -webkit-fill-available;
+  background: red;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
 
+.content {
+  align-items: center;
+  display: flex;
+  width: -webkit-fill-available;
+  display: flex; /* establish flex container */
+  flex-direction: column;
+}
 
+.title {
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  margin-top: 4vw;
+}
+
+.title1 {
+  background-color: black;
+  color: white;
+  margin-top: 1vw;
+  font-size: xxx-large;
+}
+
+.buttons {
+  color: white;
+  margin-bottom: 6px;
+}
+
+.rstButton {
+  color: white;
+  align-self: flex-end;
+  margin-right: 10px;
+  font-size: 10px;
+  margin-top: 10px;
+  padding: 3px 17px;
+}
+
+.finalTitle {
+  background-color: black;
+  color: white;
+  margin: auto;
+  margin-top: -14vw;
+}
+
+#finalTitle {
+  visibility: collapse;
+}
+
+.finalPicture {
+  background-color: black;
+  color: white;
+  width: 54vw;
+  margin-top: 5vw;
+}
+
+.finalText {
+  background-color: black;
+  color: white;
+}
+
+a:link {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+button {
+  padding: 3px 58px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  background-color: red;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: white;
+  color: red;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-bottom: 10%;
+}
+
+.responsive-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .finalTitle {
+    background-color: black;
+    color: white;
+    margin: auto;
+    margin-top: -28vw;
+  }
+
+  .finalPicture {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    margin-top: 5vw;
+  }
+}
