@@ -161,31 +161,32 @@ function App() {
       setQuestion((prev) => "IS IT LIGHT OR DARK OUTSIDE?")
       setChoice1("LIGHT");
       setChoice2("DARK");
-      document.getElementById("button1").style.opacity = 1;
-      document.getElementById("button2").style.opacity = 1;
-      document.getElementById("button3").style.opacity = 0;
+      document.getElementById("button1").style.visibility = "visible";
+      document.getElementById("button2").style.visibility = "visible";
+      document.getElementById("button3").style.visibility = "collapse";
     } else if (counter === 1) {
       setQuestion((prev) => "WHAT IS YOUR DESIRED MOOD?")
       setChoice1("RELAXED");
       setChoice2("EUPHORIC");
       setChoice3("WILD");
-      document.getElementById("button3").style.opacity = 1;
+      document.getElementById("button3").style.visibility = "visible";
     } else if (counter === 2) {
       setQuestion((prev) => "WHERE ARE YOU LISTENING?")
       setChoice1("CAR");
       setChoice2("BEDROOM");
       setChoice3("PARTY");
     } else if (counter === 3) {
+      document.getElementById("button3").style.visibility = "collapse";
       setQuestion((prev) => "DOES IT HAVE TO BE AN OFFICIAL RELEASE?")
       setChoice1("YES");
       setChoice2("NO");
-      document.getElementById("button3").style.opacity = 0;
+
     } else {
       setQuestion((prev) => "")
-      document.getElementById("button1").style.opacity = 0;
-      document.getElementById("button2").style.opacity = 0;
-      document.getElementById("nxtBtn").style.opacity = 0;
-      document.getElementById("rstBtn").style.opacity = 1;
+      document.getElementById("button1").style.visibility = "collapse";
+      document.getElementById("button2").style.visibility = "collapse";
+      document.getElementById("nxtBtn").style.visibility = "collapse";
+      document.getElementById("rstBtn").style.visibility = "visible";
       document.getElementById("finalTitle").style.visibility = "visible";
       document.getElementById("finalpic").style.visibility = "visible";
       //run a function that gives us the final answer
@@ -246,10 +247,10 @@ function App() {
     setChoice1("LIGHT");
     setChoice2("DARK");
     setFinalSong("");
-    document.getElementById("button1").style.opacity = 1;
-    document.getElementById("button2").style.opacity = 1;
-    document.getElementById("nxtBtn").style.opacity = 1;
-    document.getElementById("rstBtn").style.opacity = 0;
+    document.getElementById("button1").style.visibility = "visible";
+    document.getElementById("button2").style.visibility = "visible";
+    document.getElementById("nxtBtn").style.visibility = "visible";
+    document.getElementById("rstBtn").style.visibility = "collapse";
     document.getElementById("finalTitle").style.visibility = "collapse";
     document.getElementById("finalpic").style.visibility = "collapse";
     finalSongs = [];

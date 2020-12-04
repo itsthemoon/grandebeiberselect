@@ -133,7 +133,7 @@ button:hover {
     background-color: black;
     color: white;
     margin: auto;
-    margin-top: -28vw;
+    margin-top: -72vw;
     text-align: center;
   }
 
@@ -142,5 +142,14 @@ button:hover {
     color: white;
     width: 50vw;
     margin-top: 5vw;
+  }
+
+  .title {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    margin-top: 4vw;
+    text-align: center;
+    margin-bottom: 40vw;
   }
 }

@@ -13,29 +13,29 @@ code {
 }
 
 #button3 {
-  opacity: 0;
+  visibility: collapse;
 }
 
 #button4 {
-  opacity: 1;
+  visibility: visible;
 }
 
 #rmxBtn {
-  opacity: 0;
+  visibility: collapse;
 }
 
 #button1 {
-  opacity: 0;
+  visibility: collapse;
 }
 
 #button2 {
-  opacity: 0;
+  visibility: collapse;
 }
 
 #nxtBtn {
-  opacity: 1;
+  visibility: visible;
 }
 
 #rstBtn {
-  opacity: 0;
+  visibility: collapse;
 }
