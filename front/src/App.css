@@ -22,12 +22,13 @@ body {
   flex-direction: column;
 }
 
-.title {
+#title {
   font-size: 25px;
   background-color: black;
   color: white;
   margin-top: 4vw;
   text-align: center;
+  visibility: visible;
 }
 
 #finalpic {
@@ -40,9 +41,28 @@ body {
   font-size: xxx-large;
 }
 
-.buttons {
+.labels {
   color: white;
   margin-bottom: 21px;
+}
+
+#quiz {
+  visibility: collapse;
+}
+
+#titlePageBtn {
+  margin-top: 40%;
+  visibility: visible;
+}
+
+#submitButton {
+  margin: 10%;
+}
+
+#titlePage {
+  visibility: visible;
+  color: white;
+  text-align: center;
 }
 
 .rstButton {
@@ -144,12 +164,15 @@ button:hover {
     margin-top: 5vw;
   }
 
-  .title {
+  #title {
     font-size: 25px;
     background-color: black;
     color: white;
     margin-top: 4vw;
     text-align: center;
     margin-bottom: 40vw;
+    visibility: visible;
   }
+
+  
 }
